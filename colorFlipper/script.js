@@ -16,3 +16,14 @@ btn.onclick = () => {
 function getRandomNum() {
     return Math.floor(Math.random() * hex.length);
 }
+
+btn.ontouchstart = ()=>{
+    btn.style.transition = "all .1s";
+    btn.style.color = "white";
+    btn.style.backgroundColor = "black";
+};
+btn.ontouchend = ()=>{
+    btn.style.transition = "all .4s";
+    btn.style.color = "black";
+    btn.style.backgroundColor = "transparent";
+};

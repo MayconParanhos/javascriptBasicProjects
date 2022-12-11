@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 :root {
-    --nav-gray: rgb(152,152,156);
+    --nav-gray: rgb(218, 218, 220);
     --dark-gray: rgb(31,32,34);
     --max-width: 1170px;
    --fixed-width: 620px;
@@ -24,7 +24,7 @@ nav {
     background-color: var(--nav-gray);
     display: grid;
     align-items: center;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 5px black;
 }
 
 .nav-center {
@@ -81,7 +81,7 @@ nav {
     transition: all .3s linear;
 }
 
-.btn:hover {
+.btn:hover, .btn:active {
     background-color: var(--dark-gray);
     color: whitesmoke;
 }
