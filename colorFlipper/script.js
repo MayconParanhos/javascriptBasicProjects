@@ -17,6 +17,7 @@ function getRandomNum() {
     return Math.floor(Math.random() * hex.length);
 }
 
+// CHANGE THE BTN BEHAVIOR TO BE MOBILE FRIENDLY
 btn.ontouchstart = ()=>{
     btn.style.transition = "all .1s";
     btn.style.color = "white";
