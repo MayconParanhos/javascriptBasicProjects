@@ -24,13 +24,12 @@ nav {
     height: 45px;
     background-color: var(--nav-gray);
     display: grid;
-    align-items: center;
+    place-items: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
 }
 
 .nav-center {
     display: flex;
-    margin: 0 auto;
     align-items: center;
     justify-content: space-between;
     width: 90vw;
