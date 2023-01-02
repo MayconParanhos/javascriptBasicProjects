@@ -1,11 +1,15 @@
 const toggle = document.querySelector('.sidebar-toggle');
-const close  = document.querySelector('.close-btn');
+const closeBtn  = document.querySelector('.close-btn');
 const sidebar = document.querySelector('.sidebar');
 
 toggle.onclick = ()=> {
-    sidebar.classList.toggle('sidebar-show')
+    sidebar.classList.toggle('sidebar-show');
+    toggle.children[0].classList.toggle('fa-bars');
+    toggle.children[0].classList.toggle('fa-bars-staggered');
 }
 
-close.onclick = ()=> {
+closeBtn.onclick = ()=> {
     sidebar.classList.remove('sidebar-show');
+    toggle.children[0].classList.remove('fa-bars-staggered');
+    toggle.children[0].classList.add('fa-bars');
 }
