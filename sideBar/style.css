@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+*
+* Code written by @mayconparanhos Twitter
+*
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+
+.sidebar-toggle{
+    float: right;
+    color: blueviolet;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+    margin: 15px;
+}
+.sidebar-toggle:active {
+    transform: scale(1.1);
+}
+
+.sidebar {
+    position: fixed;
+    left: -100%;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: all .5s cubic-bezier(.68,.19,.98,.49);
+
+}
+
+.sidebar-show {
+    left: 0%;
+    opacity: 1;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 20px;
+    padding: 20px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-header .logo {
+    width: 90px;
+}
+
+.close-btn {
+    color: rgb(177, 5, 5);
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+}
+.close-btn:hover {
+    animation: spin 1s ease-in;
+}
+
+.links li {
+    list-style: none;
+    transition: all .3s ease-in-out;
+}
+
+.links li:hover{
+    background-color: rgba(128, 128, 128, 0.2);
+    padding-left: 10px;
+}
+
+.links a:link, .links a:visited{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-left: 15px;
+    padding: 5px;
+    color: rgb(57, 55, 55);
+}
+.links a:active {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.social-icons {
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.social-icons a:link, .social-icons a:visited {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.social-icons li:nth-child(1) > a {
+    color: #4267B2;
+}
+.social-icons li:nth-child(2) > a {
+    color: #1DA1F2;
+}
+.social-icons li:nth-child(3) > a {
+    color: #1769ff;
+}
+.social-icons li:nth-child(4) > a {
+    color: #0077b5;
+}
+.social-icons li:nth-child(5) > a {
+    color: black;
+}
+
+@keyframes spin {
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        animation: spin .3s ease-in;
+        transform: rotate(-360deg);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .sidebar {
+        width: 400px;
+        left: -400px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    }
+    .sidebar-show {
+        left: 0px;
+    }
+}
+
