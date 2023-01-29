@@ -78,10 +78,17 @@ body {
 
 #close {
     position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     right: 30px;
     font-weight: bold;
+    font-size: 15px;
     background-color: transparent;
     border: none;
+    color: black;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.2);
 }
 
 .modal-title {
