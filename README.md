@@ -1,2 +1,2 @@
 # javascriptBasicProjects
-JavaScript Basic Projects taught by John Smilga
+JavaScript Basic Projects taught by John Smilga @john-smilga
