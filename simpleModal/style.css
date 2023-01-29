@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./pexels-abhishek-gaurav-1265584.jpg");
+    background-size: 150%;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, .2);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 5%;
+    border: 2px solid rgba(255, 255, 255, .5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 40px;
+}
+
+#open {
+    display: inline-block;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    transition: all .4s ease-in-out;
+}
+#open:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, .5);
+    transform: scale(1.03);
+}
+
+/* Modal */
+.modal-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(137, 43, 226, 0.4);
+    opacity: 0;
+    left: -100%;
+}
+
+.modal {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5%;
+    border: 2px solid rgba(255, 255, 255);
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#close {
+    position: absolute;
+    right: 30px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+
+.modal-title {
+    position: absolute;
+    font-size: 40px;
+    text-align: center;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
