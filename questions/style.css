@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
+
+:root {
+    --dark-gray: rgb(78, 78, 78);
+    --light-gray: rgb(130, 130, 130);
+    --gold: #c59d5f;
+    --fixed-width: 620px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+    background-color: rgb(250, 250, 250);
+}
+
+.questions {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.questions .title {
+    text-align: center;
+    font-family: 'Great Vibes';
+    color: var(--gold);
+    font-size: 2.5rem;
+    margin: 6rem 0 4rem 0;
+}
+
+.section-center {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.question {
+    background-color: white;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.question .question-title {
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: var(--dark-gray);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.question .question-text {
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--light-gray);
+    color: var(--light-gray);
+    font-size: 1.2rem;
+}
+
+.question-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: var(--gold);
+}
+
+.hidden {
+    display: none;
+}
+
+/*
+    MOBILE FIRST
+*/
+@media screen and (max-width: 600px) {
+    .questions {
+        width: 95%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .questions .title {
+        font-size: 1.6rem;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .section-center {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .question {
+        padding: 1rem .5rem 1rem .5rem;
+    }
+
+    .question .question-title {
+        font-size: 0.9rem;
+        align-items: center;
+    }
+
+    .question .question-text {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
